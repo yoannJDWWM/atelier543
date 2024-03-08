@@ -1,0 +1,468 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="Entreprise de travaux généraux et de rénovation à Brunoy. Nous proposons des services de rénovation complète, de construction, d'aménagement intérieur et extérieur. Contactez-nous pour vos projets de construction et de rénovation.">
+		<meta name="keywords" content="travaux généraux, rénovation, construction, aménagement, Brunoy, France, Paris">
+		<meta name="author" content="Votre Entreprise">
+		<meta name="robots" content="index, follow">
+		<meta name="geo.placename" content="Brunoy, France">
+		<meta name="geo.position" content="48.6985;2.5043">
+		<meta name="geo.region" content="FR-91">
+		<meta name="ICBM" content="48.6985, 2.5043">
+        <link rel="icon" href="{{asset('assets/img/icon.png')}}" type="image/png">
+        <title>{% block title %}Atelier 543{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/linericon/style.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/owl-carousel/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/lightbox/simpleLightbox.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/nice-select/css/nice-select.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/animate-css/animate.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/vendors/flaticon/flaticon.css')}}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
+        {% endblock %}
+        <!-- Bootstrap CSS -->   
+    </head>
+    <body>
+
+    {% block body %}
+
+
+
+    <header id="acceuil" class="header_area">
+            <div class="main_menu" id="mainNav">
+            	<nav id="navbar"class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" style="size: 0.2em;" href="#"><img src="{{asset('assets/img/logo.png')}}" alt=""><img src="{{asset('assets/img/logo-2.png')}}" alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link scroll-link" href="#acceuil">
+                                Acceuil</a></li> 
+								<li class="nav-item"><a class="nav-link scroll-link" href="#about-us">A Propos De Nous</a></li> 
+								<li class="nav-item"><a class="nav-link scroll-link" href="#projets">Nos Projets</a></li>
+								<li class="nav-item"><a class="nav-link scroll-link" href="#testimonial">Témoignages</a></li>
+
+								<li class="nav-item"><a class="nav-link scroll-link" href="#contact">Nous Contacter</a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<div class="banner_content">
+							
+								<h2>{{header.titre}}</h2>
+								
+								<p>{{header.contenu}}</p> 
+								<a class="banner_btn scroll-link" href="#contact">{{header.titreBtn}}</a>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="home_right_box">
+								<a class="home_item" href="#projets">
+									<i class="flaticon-sofa"></i>
+								</a>
+								<a class="home_item" href="#projets">
+									<i class="flaticon-bed"></i>
+								</a>
+								<a class="home_item" href="#projets">
+									<i class="flaticon-computer"></i>
+								</a>
+								<a class="home_item" href="#projets">
+									<i class="flaticon-mirror"></i>
+								</a>
+								<a class="home_item" href="#projets">
+									<i class="flaticon-closet"></i>
+								</a>
+								<a class="home_item" href="#projets">
+									<i class="flaticon-kitchen"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+
+
+		<!--================About Area =================-->
+        <section id="about-us" class="about_area p_120">
+        	<div class="container">
+        		<div class="about_inner row">
+        			<div class="col-lg-6">
+        				<div class="about_left_text">
+        					<h6>{{about.surTitre}}</h6>
+        					<h3>{{about.titre}}</h3>
+        					<h5>{{about.sousTitre}}</h5>
+        					<p>{{about.contenu}}</p>
+        					<a class="main_btn scroll-link" href="#contact" >{{about.titreBtn}}</a>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<img class="img-fluid" src="{{ asset('assets/img/about-1.jpg') }}" alt="">
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End About Area =================-->
+        
+        
+        <!--================Projects Area =================-->
+
+
+<section id="projets">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+			{% for key, projet in projets %}
+			  <div class="carousel-item {% if key == 0 %}active{% endif %}">
+				<div class="row m0">
+					<div class="projects_item wd_18">
+						<img  style="height:100%" src="/uploads/{{projet.projetImages.image1}}" alt="">
+						<div class="hover">
+							<h4>Alex Complex for esidence</h4>
+							<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+						</div>
+					</div>
+					<div class="projects_item wd_18">
+						<img  style="height:100%" src="/uploads/{{projet.projetImages.image2}}" alt="">
+						<div class="hover">
+							<h4>Alex Complex for esidence</h4>
+							<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+						</div>
+					</div>
+					<div class="projects_item wd_44">
+						<img  src="/uploads/{{projet.projetImages.image3}}"  alt="">
+						<div class="hover">
+							<h4>Alex Complex for esidence</h4>
+							<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+						</div>
+					</div>
+					<div class="projects_item wd_18">
+						<img style="height:100%" src="/uploads/{{projet.projetImages.image4}}" alt="">
+						<div class="hover">
+							<h4>Alex Complex for esidence</h4>
+							<p>LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create  slimmer.</p>
+						</div>
+					</div>
+				</div>
+			  </div>
+			{% endfor %}
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		  </div>
+</section>
+
+
+
+
+        <section class="projects_area">
+        	
+        </section>
+        <!--================End Projects Area =================-->
+        
+        <!--================Feature Area =================-->
+        <section class="feature_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>{{competence.Titre}}</h2>
+        			<p>{{competence.contenu}}</p>
+        		</div>
+        		<div class="row feature_inner">
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-user"></i>Expertise technique</h4>
+        					<p>L'innovation et la tradition se rejoignent pour créer des projets durables et remarquables.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-license"></i>Services professionel</h4>
+        					<p>Nous offrons un service dédié et professionnel à chaque étape de votre projet.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-phone"></i>Support</h4>
+        					<p>Notre équipe expérimentée vous guide avec expertise à travers chaque défi.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-rocket"></i>Compétences technique</h4>
+        					<p>Nous combinons expertise traditionnelle et technologique pour des solutions innovantes.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-diamond"></i>HAUTEMENT RECOMMANDÉ</h4>
+        					<p>Choisissez la qualité et rejoignez nos clients satisfaits.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4 col-md-6">
+        				<div class="feature_item">
+        					<h4><i class="lnr lnr-bubble"></i>Avis positifs</h4>
+        					<p>Nos clients témoignent de notre engagement envers l'excellence et la satisfaction.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Feature Area =================-->
+
+        	<div id="testimonial" class="container">
+        		<div class="main_title" style="margin-bottom:0px">
+        			<h2>Ce qu'ils pensent de nous</h2>
+        			<p>Nous nous démarquons par notre approche personnalisée, notre engagement envers l'innovation et la qualité, notre service client exceptionnel, le respect des délais, une communication transparente, notre engagement environnemental et notre volonté de collaboration. C'est cette combinaison unique de valeurs qui nous rend uniques dans notre domaine.</p>
+        		</div>
+		<script src="https://widget.trustmary.com/QgDYTc4vZ"></script>
+
+        </div>
+
+        <!--================Impress Area =================-->
+        <section class="impress_area p_120" style="background: url(assets/img/notify-bg.jpg) no-repeat scroll center center">
+        	<div class="container">
+        		<div class="impress_inner text-center">
+					<h2>{{impress.Titre}}</h2>
+					<p>{{impress.contenu}}</p>
+					<a class="main_btn" href="#">{{impress.texteBtn}}</a>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Impress Area =================-->
+
+
+
+
+		<!--================Contact Area =================-->
+        <section id="contact" class="contact_area p_120">
+            <div class="container">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2633.708782271659!2d2.488254041902249!3d48.69193223568147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5e1b538d6179f%3A0x36de4128e949d67e!2sAtelier%20543%20Menuiserie%20et%20travaux%20g%C3%A9neraux!5e0!3m2!1sfr!2sfr!4v1709743105394!5m2!1sfr!2sfr" class="mapBox" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				{% for key, info in informations %}
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="contact_info">
+                            <div class="info_item">
+                                <i class="lnr lnr-home"></i>
+                                <h6>{{info.adresse}}</h6>
+								<p>{{info.detailAdresse}}</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-phone-handset"></i>
+                                <h6><a href="#">{{info.telephone}}</a></h6>
+                                <p>{{info.horaire}}</p>
+                            </div>
+                            <div class="info_item">
+                                <i class="lnr lnr-envelope"></i>
+                                <h6><a href="#">{{info.mail}}</a></h6>
+                                <p>Envoyez votre demande à tout instant</p>
+                            </div>
+                        </div>
+                    </div>
+					 {% endfor %}
+                    <div class="col-lg-9">
+                        <form class="row contact_form" method="post" id="contactForm">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Votre nom" required>
+                                </div>
+								<div class="form-group">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Votre adresse email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Sujet" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Votre Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" value="submit" class="btn submit_btn">ENVOYER</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================Contact Area =================-->
+
+		<!--================Contact Success and Error message Area =================-->
+        <div id="success" class="modal modal-message fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fa fa-close"></i>
+                </button>
+                <h2>Merci !</h2>
+                <p>Votre message a bien été envoyé...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#contactForm').submit(function(e) {
+            e.preventDefault(); // Empêche la soumission normale du formulaire
+            
+            // Envoi des données du formulaire via AJAX
+            $.ajax({
+                url: "{{ path('mail') }}", // URL de votre script PHP
+                type: 'post',
+                data: $(this).serialize(), // Sérialise les données du formulaire
+                success: function(response) {
+                    $('#success').modal('show'); // Affiche la modal de succès
+                    setTimeout(function() {
+                        $('#success').modal('hide'); // Masque la modal de succès après 4 secondes
+                    }, 4000);
+                }
+            });
+        });
+    });
+</script>
+
+        <!-- Modals error -->
+
+        <div id="error" class="modal modal-message fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-close"></i>
+                        </button>
+                        <h2>Oups !</h2>
+                        <p> Quelque chose c'est mal passé</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--================End Contact Success and Error message Area =================-->
+
+        
+        
+        <!--================Footer Area =================-->
+        <footer class="footer_area p_120">
+        	<div class="container">
+        		<div class="row footer_inner">
+        			<div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget ab_widget">
+        					<div class="f_title">
+        						<h3>A propos de Nous</h3>
+        					</div>
+        					
+        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés <a href="" target="_blank">atelier 543</a> | Site fait avec <i class="fa fa-heart-o" aria-hidden="true"></i> par <a href="https://colorlib.com" target="_blank">Colorlib</a> integré par <a href="" target="_blank">Yoann Jayles</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+        				</aside>
+        			</div>
+        			 <div class="col-lg-5 col-sm-6">
+        				<aside class="f_widget news_widget">
+        					<div class="f_title">
+        						<h3>Liens Utiles</h3>
+        					</div>
+        					<p>Tous nos liens utiles</p>
+        					<ul class="list">
+        						<li><a href="{{ path('admin') }}">admin</a></li>
+        					</ul>
+        				</aside>
+        			</div> 
+        			<div class="col-lg-2">
+        				<aside class="f_widget social_widget">
+        					<div class="f_title">
+        						<h3>Suivez Nous</h3>
+        					</div>
+        					<p>Rejoignez notre instagram</p>
+        					<ul class="list">
+        						<li><a href="https://www.instagram.com/atelier_543/"><i class="fa fa-instagram"></i></a></li>
+        					</ul>
+        				</aside>
+        			</div>
+        		</div>
+        	</div>
+        </footer>
+        <!--================End Footer Area =================-->
+        
+        
+        <script>
+		$(document).ready(function() {
+        $('.scroll-link').click(function(event){
+            event.preventDefault();
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top
+            }, 1000);
+        });
+    });
+	</script>
+        
+        
+       
+    </body>
+
+    {% endblock %}
+  {% block javascripts %}
+   <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{{asset('assets/js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('assets/js/popper.js')}}"></script>
+        <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets/js/stellar.js')}}"></script>
+        <script src="{{asset('assets/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('assets/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+        <script src="{{asset('assets/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{asset('assets/vendors/isotope/isotope-min.js')}}"></script>
+        <script src="{{asset('assets/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('assets/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('assets/vendors/counter-up/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset('assets/vendors/counter-up/jquery.counterup.min.js')}}"></script>
+        <script src="{{asset('assets/js/mail-script.js')}}"></script>
+        <!--gmaps Js-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+        <script src="{{asset('assets/js/gmaps.min.js')}}"></script>
+        <script src="{{asset('assets/js/theme.js')}}"></script>
+{% endblock %}
+    </html>
+      
+        <!--================Header Menu Area =================-->
+        
